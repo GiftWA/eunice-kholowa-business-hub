@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Dancing_Script } from "next/font/google";
 import "./globals.css";
+import TopBar from "@/components/layout/TopBar";
+import Header from "@/components/layout/Header";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,7 +34,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${dancingScript.variable} font-sans antialiased`}
       >
-        {children}
+        <TopBar />
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );
