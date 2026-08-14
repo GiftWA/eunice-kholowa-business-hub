@@ -9,7 +9,7 @@ export default function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-3 group flex-shrink-0"
+      className="flex items-center gap-3 group 	shrink-0"
       aria-label="Eunice Kholowa Business Hub — Home"
     >
       {/* EK Monogram Mark */}

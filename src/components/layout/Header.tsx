@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <Container>
-        <div className="flex items-center justify-between h-[72px] gap-4">
+        <div className="flex items-center justify-between h-18 gap-4">
 
           {/* Logo */}
           <Logo />
@@ -90,7 +90,7 @@ export default function Header() {
                         className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-600
                           hover:text-brand-purple hover:bg-brand-lavender transition-colors duration-150"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0" />
                         {sub.label}
                       </Link>
                     ))}
@@ -101,7 +101,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop — CTA + Phone */}
-          <div className="hidden lg:flex flex-col items-end gap-1.5 flex-shrink-0">
+          <div className="hidden lg:flex flex-col items-end gap-1.5 shrink-0">
             <Link
               href="/trainings"
               className="inline-flex items-center gap-2 bg-brand-purple text-white text-xs
@@ -191,7 +191,7 @@ export default function Header() {
                           className="flex items-center gap-2 py-2 text-sm
                             text-gray-600 hover:text-brand-purple transition-colors"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0" />
                           {sub.label}
                         </Link>
                       ))}
