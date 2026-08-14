@@ -1,69 +1,95 @@
-import Image from "next/image";
+import Container from "@/components/ui/Container";
+import Button from "@/components/ui/Button";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-white py-16">
+      <Container>
+
+        {/* Typography Preview */}
+        <section className="mb-12">
+          <p className="font-script text-4xl text-brand-purple mb-1">
+            Welcome to
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <h1 className="text-5xl font-extrabold text-brand-purple leading-tight">
+            EUNICE KHOLOWA
+          </h1>
+          <h2 className="text-5xl font-extrabold text-brand-gold leading-tight">
+            BUSINESS HUB
+          </h2>
+          <p className="text-xl font-semibold text-gray-700 mt-3">
+            Learn. Create. Start. Grow.
+          </p>
+          <p className="text-base text-gray-500 mt-2 max-w-md">
+            I help you gain practical skills, discover profitable business ideas
+            and build a successful business even if you are starting with little
+            or no capital.
+          </p>
+        </section>
+
+        {/* Section Heading Preview */}
+        <section className="mb-12">
+          <SectionHeading title="MY TRAININGS" />
+          <SectionHeading title="Centered Heading" align="center" />
+        </section>
+
+        {/* Color Palette */}
+        <section className="mb-12">
+          <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            Brand Colors
+          </p>
+          <div className="flex flex-wrap gap-4">
+            {[
+              { bg: "bg-brand-purple",        label: "Purple",         light: false },
+              { bg: "bg-brand-purple-dark",   label: "Purple Dark",   light: false },
+              { bg: "bg-brand-purple-light",  label: "Purple Light",  light: false },
+              { bg: "bg-brand-gold",          label: "Gold",          light: false },
+              { bg: "bg-brand-gold-light",    label: "Gold Light",    light: false },
+              { bg: "bg-brand-lavender",      label: "Lavender",      light: true },
+              { bg: "bg-brand-lavender-dark", label: "Lavender Dark", light: true },
+            ].map((color) => (
+              <div
+                key={color.label}
+                className={`${color.bg} w-24 h-24 rounded-xl flex items-end p-2 border border-gray-200`}
+              >
+                <span
+                  className={`text-xs font-medium ${
+                    color.light ? "text-brand-purple" : "text-white"
+                  }`}
+                >
+                  {color.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Button Variants */}
+        <section className="mb-12">
+          <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            Button Variants
+          </p>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button variant="primary">Primary</Button>
+            <Button variant="secondary">Secondary</Button>
+            <Button variant="gold">Gold</Button>
+            <div className="bg-brand-purple p-4 rounded-xl">
+              <Button variant="outline">Outline</Button>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-4 items-center mt-4">
+            <Button size="sm">Small</Button>
+            <Button size="md">Medium</Button>
+            <Button size="lg">Large</Button>
+          </div>
+        </section>
+
+        <p className="text-xs text-gray-400 border-t pt-4">
+          ✓ Milestone 2 — Design System foundation complete
+        </p>
+
+      </Container>
+    </main>
   );
 }
