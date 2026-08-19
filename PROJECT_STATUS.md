@@ -162,3 +162,20 @@ The original system prompt document (the big instructions doc)
 - LEARN MORE ABOUT ME button
 - Benefits card: Practical, Profitable Ideas, Growth, Empowerment
 - Data-driven benefits from src/data/about.ts
+
+### ✅ Milestone 6 — Training Cards
+- Reusable TrainingCard component driven by data
+- src/data/trainings.ts with 15 real trainings (2 categories)
+- 6 featured cards on homepage with real product images
+- Price badge, category badge, hover effects
+
+### ✅ Milestone 7 — Training Benefits Strip
+- 5 benefits in horizontal strip on lavender background
+- Icons: GraduationCap, Smile, Users, Clock, Infinity
+- Vertical dividers between items on desktop
+- Data driven from src/data/benefits.ts
+
+### ✅ Milestone 8 — CTA Section
+- Deep purple banner
+- Gold circle Send icon
+- Chat on WhatsApp + phone number buttons
