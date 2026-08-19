@@ -154,3 +154,11 @@ Then also share:
 
 The original reference screenshot (Image 1 from today)
 The original system prompt document (the big instructions doc)
+
+### ✅ Milestone 5 — About Me Section
+- Three-column layout: photo | bio | benefits card
+- Portrait photo (eunice-about.jpg) with object-contain
+- Bio text with highlighted brand name
+- LEARN MORE ABOUT ME button
+- Benefits card: Practical, Profitable Ideas, Growth, Empowerment
+- Data-driven benefits from src/data/about.ts
