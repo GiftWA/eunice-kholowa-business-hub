@@ -40,10 +40,11 @@ export const navItems: NavItem[] = [
 ];
 
 export const socialLinks = [
-  { name: "Facebook",  href: "https://facebook.com/eunicekholowa" },
-  { name: "TikTok",   href: "https://tiktok.com/@eunicekholowa" },
-  { name: "YouTube",  href: "https://youtube.com/@eunicekholowa" },
-  { name: "Instagram",href: "https://instagram.com/eunicekholowa" },
+  { name: "Facebook",  href: "https://www.facebook.com/share/19iwddxRJH/" },
+  { name: "TikTok",   href: "https://www.tiktok.com/@eunicekholowa1" },
+  { name: "YouTube",  href: "https://youtube.com/@ndingathewitheunice" },
+  { name: "Instagram",href: "https://www.instagram.com/eunicekholowa04" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/eunice-kholowa-85b29b2a3" },
 ] as const;
 
 export type SocialName = typeof socialLinks[number]["name"];
