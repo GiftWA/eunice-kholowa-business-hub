@@ -27,4 +27,13 @@
   body {
     @apply text-gray-800 bg-white;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Ensure images never overflow */
+  img {
+    max-width: 100%;
+  }
 }

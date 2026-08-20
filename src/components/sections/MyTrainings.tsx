@@ -1,17 +1,13 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import TrainingCard from "@/components/ui/TrainingCard";
-import { getFeaturedTrainings } from "@/data/trainings";
+import { getFeaturedTrainings, type Training } from "@/data/trainings";
 
-/**
- * My Trainings section — homepage preview of 6 featured trainings.
- * Full listing is on /trainings page (built in Milestone 11).
- */
 export default function MyTrainings() {
   const featuredTrainings = getFeaturedTrainings(6);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section header */}
@@ -22,7 +18,6 @@ export default function MyTrainings() {
             </h2>
             <div className="mt-2 h-1 w-16 bg-brand-gold rounded-full" />
           </div>
-
           <Link
             href="/trainings"
             className="flex items-center gap-1.5 text-sm font-semibold
@@ -35,7 +30,7 @@ export default function MyTrainings() {
 
         {/* Cards grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-          {featuredTrainings.map((training) => (
+          {featuredTrainings.map((training: Training) => (
             <TrainingCard key={training.id} training={training} />
           ))}
         </div>

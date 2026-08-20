@@ -3,32 +3,26 @@ import Link from "next/link";
 import { User } from "lucide-react";
 import { benefits } from "@/data/about";
 
-/**
- * About Me Section
- * Three-column layout: photo | bio content | benefits card
- */
 export default function AboutMe() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-10 items-start">
 
-          {/* ── Column 1 — Portrait Photo ─────────────────────── */}
-         <div className="relative w-full aspect-3/4 rounded-2xl overflow-hidden
-  shadow-lg border-4 border-brand-lavender-dark bg-gray-50">
-  <Image
-    src="/images/eunice-about.jpg"
-    alt="Eunice Kholowa — Business Coach and Trainer"
-    fill
-    className="object-contain object-center"
-    sizes="(max-width: 1024px) 100vw, 33vw"
-  />
-</div>
+          {/* ── Column 1 — Portrait Photo ─────────────────── */}
+          <div className="relative w-full aspect-3/4 rounded-2xl overflow-hidden
+            shadow-lg border-4 border-brand-lavender-dark bg-gray-50">
+            <Image
+              src="/images/eunice-about.jpg"
+              alt="Eunice Kholowa — Business Coach and Trainer"
+              fill
+              className="object-contain object-center"
+              sizes="(max-width: 1024px) 100vw, 33vw"
+            />
+          </div>
 
-          {/* ── Column 2 — Bio Content ────────────────────────── */}
+          {/* ── Column 2 — Bio Content ────────────────────── */}
           <div className="flex flex-col justify-start pt-2">
-
-            {/* Section heading */}
             <div className="mb-5">
               <h2 className="text-2xl font-extrabold text-brand-purple uppercase tracking-wide">
                 ABOUT ME
@@ -36,7 +30,6 @@ export default function AboutMe() {
               <div className="mt-2 h-1 w-16 bg-brand-gold rounded-full" />
             </div>
 
-            {/* Bio paragraphs */}
             <p className="text-gray-600 leading-relaxed mb-4 text-sm">
               I am Eunice Kholowa, a business coach, trainer and entrepreneur
               passionate about helping people with practical skills and
@@ -52,7 +45,6 @@ export default function AboutMe() {
               people start, grow and scale a sustainable business.
             </p>
 
-            {/* Learn More Button */}
             <Link
               href="/about"
               className="inline-flex items-center gap-2 bg-brand-purple text-white
@@ -65,7 +57,7 @@ export default function AboutMe() {
             </Link>
           </div>
 
-          {/* ── Column 3 — Benefits Card ──────────────────────── */}
+          {/* ── Column 3 — Benefits Card ──────────────────── */}
           <div className="bg-brand-lavender rounded-2xl p-6 shadow-sm
             border border-brand-lavender-dark">
             <div className="space-y-5">
@@ -73,13 +65,10 @@ export default function AboutMe() {
                 const Icon = benefit.icon;
                 return (
                   <div key={benefit.title} className="flex items-start gap-4">
-                    {/* Icon circle */}
                     <div className="w-10 h-10 rounded-full bg-brand-purple/10
                       flex items-center justify-center shrink-0 mt-0.5">
                       <Icon className="w-5 h-5 text-brand-purple" />
                     </div>
-
-                    {/* Text */}
                     <div>
                       <h3 className="font-bold text-brand-purple text-sm mb-0.5">
                         {benefit.title}
