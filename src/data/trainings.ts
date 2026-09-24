@@ -13,11 +13,14 @@ export interface Training {
   description: string;
   price: number;
   category: TrainingCategory;
-  image: string | null; // null = show placeholder gradient
+  image: string | null;
+  duration?: string;
+  whatYouLearn?: string[];
 }
 
 export const trainings: Training[] = [
-  // ── Soaps & Oils ─────────────────────────────────────
+
+  // ── Soaps & Oils ──────────────────────────────────────
   {
     id: "1",
     slug: "bar-soap-making",
@@ -26,6 +29,15 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/bar-soap.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to source raw materials at low cost",
+      "Step-by-step bar soap production process",
+      "Correct measurements and mixing techniques",
+      "How to package and present your finished soaps",
+      "How to price your products for profit",
+      "Where and how to sell your soaps",
+    ],
   },
   {
     id: "2",
@@ -35,6 +47,15 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/surf-soap.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "The ingredients needed and where to find them",
+      "How to mix and produce quality powdered soap",
+      "Getting the right texture and cleaning performance",
+      "Packaging and branding your product",
+      "Pricing strategies for the local market",
+      "How to grow a customer base",
+    ],
   },
   {
     id: "3",
@@ -44,6 +65,15 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/glycerine.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "What glycerine is and its many uses",
+      "The production process step by step",
+      "Quality testing your finished product",
+      "Packaging options for retail and wholesale",
+      "Identifying buyers and markets for glycerine",
+      "Pricing for maximum profit",
+    ],
   },
   {
     id: "4",
@@ -53,6 +83,15 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/pine-gel.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Ingredients needed and how to source them",
+      "Step-by-step pine gel production",
+      "Achieving the right consistency and scent",
+      "Bottling and labeling your product",
+      "Setting competitive prices",
+      "Selling to homes, offices, and shops",
+    ],
   },
   {
     id: "5",
@@ -62,6 +101,15 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/shampoo.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Understanding shampoo ingredients and their roles",
+      "How to formulate a quality shampoo from scratch",
+      "Adjusting for different hair types",
+      "Safe and attractive packaging",
+      "Building your personal care brand",
+      "Marketing and selling your shampoo",
+    ],
   },
   {
     id: "6",
@@ -71,6 +119,15 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/dish-wash.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "The key ingredients in dish washing liquid",
+      "Step-by-step production process",
+      "Achieving good lather and cleaning power",
+      "Packaging in various sizes for different markets",
+      "Pricing for home sellers and wholesalers",
+      "Finding regular customers",
+    ],
   },
   {
     id: "7",
@@ -80,6 +137,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/castor-oil.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to extract pure castor oil",
+      "Quality checks for your finished oil",
+      "Packaging for beauty and health markets",
+      "Pricing and profit margins",
+      "Selling online and in local markets",
+    ],
   },
   {
     id: "8",
@@ -89,6 +154,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Soaps & Oils",
     image: "/images/trainings/castor-soap.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "The benefits of castor soap and why people buy it",
+      "Ingredients and production process",
+      "Getting the right texture and finish",
+      "Packaging for the personal care market",
+      "Selling strategies for skin care products",
+    ],
   },
 
   // ── Snacks & Food ─────────────────────────────────────
@@ -99,7 +172,15 @@ export const trainings: Training[] = [
     description: "Make delicious sweet malambe snacks for sale.",
     price: 15000,
     category: "Snacks & Food",
-    image: "/images/trainings/sweet-malambe.jpg",
+    image: "/images/trainings/sweet-malambe.png",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Sourcing and preparing your ingredients",
+      "The production process step by step",
+      "Packaging to keep products fresh",
+      "Pricing for market stalls and shops",
+      "Scaling up production as demand grows",
+    ],
   },
   {
     id: "10",
@@ -109,6 +190,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Snacks & Food",
     image: "/images/trainings/samosa.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to make the perfect samosa pastry",
+      "Preparing different fillings",
+      "Frying techniques for consistent quality",
+      "Packaging and presentation",
+      "Selling at events, markets, and shops",
+    ],
   },
   {
     id: "11",
@@ -118,6 +207,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Snacks & Food",
     image: "/images/trainings/doughnut.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Making the perfect doughnut dough",
+      "Frying and finishing techniques",
+      "Different toppings and flavours",
+      "Packaging for freshness and appeal",
+      "Pricing and selling strategies",
+    ],
   },
   {
     id: "12",
@@ -127,6 +224,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Snacks & Food",
     image: "/images/trainings/cassava-twists.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Preparing cassava correctly",
+      "The twisting and frying process",
+      "Seasoning and flavouring options",
+      "Packaging for retail sale",
+      "Building a regular customer base",
+    ],
   },
   {
     id: "13",
@@ -136,6 +241,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Snacks & Food",
     image: "/images/trainings/cassava-cherry.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Selecting and preparing the right cassava",
+      "Step-by-step production process",
+      "Quality and consistency tips",
+      "Packaging and branding",
+      "Pricing and selling locally",
+    ],
   },
   {
     id: "14",
@@ -145,6 +258,14 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Snacks & Food",
     image: "/images/trainings/freezes.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Choosing the right flavours for your market",
+      "Mixing and preparing your freeze liquid",
+      "Freezing techniques for consistent results",
+      "Packaging and storage",
+      "Pricing and selling in your community",
+    ],
   },
   {
     id: "15",
@@ -154,20 +275,402 @@ export const trainings: Training[] = [
     price: 15000,
     category: "Snacks & Food",
     image: "/images/trainings/mandasi.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "The right dough consistency for soft mandasi",
+      "Frying at the right temperature",
+      "Keeping mandasi fresh longer",
+      "Packaging for daily sales",
+      "Growing a loyal customer base",
+    ],
+  },
+
+  // ── Personal Care ──────────────────────────────────────
+  {
+    id: "16",
+    slug: "liquid-bath-soap",
+    title: "Liquid Bath Soap",
+    description: "Make your own quality liquid bath soap for daily use and profit.",
+    price: 15000,
+    category: "Personal Care",
+    image: "/images/trainings/liquid-bath-soap.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Ingredients for liquid bath soap and where to buy them",
+      "Step-by-step production process",
+      "Achieving the right lather and scent",
+      "Packaging in pump bottles and sachets",
+      "Pricing for home use and retail",
+      "Building a personal care product business",
+    ],
+  },
+  {
+    id: "17",
+    slug: "body-lotion",
+    title: "Body Lotion",
+    description: "Produce smooth, quality body lotion for skin care and profit.",
+    price: 15000,
+    category: "Personal Care",
+    image: "/images/trainings/body-lotion.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Key ingredients in body lotion and their purpose",
+      "How to mix and produce a smooth lotion",
+      "Getting the right texture, scent, and colour",
+      "Packaging and labeling your product",
+      "Pricing for retail and wholesale markets",
+      "Marketing your personal care products",
+    ],
+  },
+  {
+    id: "18",
+    slug: "hair-oil",
+    title: "Hair Oil",
+    description: "Formulate nourishing hair oil for healthy hair.",
+    price: 15000,
+    category: "Personal Care",
+    image: "/images/trainings/hair-oil.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Natural oils and their benefits for hair",
+      "How to blend and formulate hair oil",
+      "Adding scents and vitamins",
+      "Bottling and packaging",
+      "Selling in salons, markets, and online",
+    ],
+  },
+  {
+    id: "19",
+    slug: "hair-conditioner",
+    title: "Hair Conditioner",
+    description: "Make quality hair conditioner for smooth, healthy hair.",
+    price: 15000,
+    category: "Personal Care",
+    image: "/images/trainings/hair-conditioner.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "The role of conditioner in hair care",
+      "Ingredients and their functions",
+      "Step-by-step production process",
+      "Packaging for retail and salon use",
+      "Building a hair care product line",
+    ],
+  },
+  {
+    id: "20",
+    slug: "liquid-hand-wash",
+    title: "Liquid Hand Wash",
+    description: "Produce effective liquid hand wash for homes and businesses.",
+    price: 15000,
+    category: "Personal Care",
+    image: "/images/trainings/liquid-hand-wash.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Ingredients needed for liquid hand wash",
+      "Mixing and production process",
+      "Achieving good foam and a pleasant scent",
+      "Packaging in pump dispensers and refill sachets",
+      "Selling to homes, offices, schools, and shops",
+    ],
+  },
+
+  // ── Cleaning Products ──────────────────────────────────
+  {
+    id: "21",
+    slug: "toilet-cleaner",
+    title: "Toilet Cleaner",
+    description: "Make effective toilet cleaner for homes and businesses.",
+    price: 15000,
+    category: "Cleaning Products",
+    image: "/images/trainings/toilet-cleaner.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Key ingredients and how they work",
+      "Safe handling and mixing procedures",
+      "Achieving the right cleaning strength",
+      "Bottling and labeling",
+      "Selling to households and cleaning companies",
+    ],
+  },
+  {
+    id: "22",
+    slug: "floor-cleaner",
+    title: "Floor Cleaner",
+    description: "Produce quality floor cleaning liquid for all surfaces.",
+    price: 15000,
+    category: "Cleaning Products",
+    image: "/images/trainings/floor-cleaner.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Ingredients for effective floor cleaning",
+      "Production process and mixing ratios",
+      "Achieving shine and cleanliness",
+      "Packaging in different sizes",
+      "Selling to homes, schools, and offices",
+    ],
+  },
+  {
+    id: "23",
+    slug: "multipurpose-cleaner",
+    title: "Multipurpose Cleaner",
+    description: "Make an all-purpose surface cleaner for every room.",
+    price: 15000,
+    category: "Cleaning Products",
+    image: "/images/trainings/multipurpose-cleaner.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Formulating a safe all-purpose cleaner",
+      "Testing on different surfaces",
+      "Packaging in spray bottles and bulk containers",
+      "Pricing for homes, offices, and cleaning businesses",
+      "Building a cleaning products business",
+    ],
+  },
+
+  // ── Business & Entrepreneurship ────────────────────────
+  {
+    id: "24",
+    slug: "business-ideas-opportunities",
+    title: "Business Ideas & Opportunities",
+    description: "Discover profitable business ideas you can start today.",
+    price: 15000,
+    category: "Business",
+    image: "/images/trainings/business-startup.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to identify a business opportunity around you",
+      "Low-capital business ideas that really work",
+      "How to evaluate an idea before starting",
+      "Turning your skills into a business",
+      "Starting a side income alongside your main job",
+    ],
+  },
+  {
+    id: "25",
+    slug: "business-startup-management",
+    title: "Business Start-up & Management",
+    description: "Learn how to start, set up, and run a successful small business.",
+    price: 15000,
+    category: "Business",
+    image: "/images/trainings/business-startup.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to register and structure your business",
+      "Setting up your workspace and operations",
+      "Managing stock and supplies",
+      "Keeping simple and effective business records",
+      "Common mistakes new businesses make — and how to avoid them",
+    ],
+  },
+  {
+    id: "26",
+    slug: "pricing-profit-calculation",
+    title: "Pricing & Profit Calculation",
+    description: "Learn how to price your products correctly and maximise your profit.",
+    price: 15000,
+    category: "Business",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to calculate the true cost of your product",
+      "Understanding profit margins",
+      "How to price competitively without losing money",
+      "Avoiding common pricing mistakes",
+      "When and how to increase your prices",
+    ],
+  },
+  {
+    id: "27",
+    slug: "marketing-sales",
+    title: "Marketing & Sales",
+    description: "Learn practical ways to attract customers and grow your sales.",
+    price: 15000,
+    category: "Business",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "Understanding your target customer",
+      "Simple and effective marketing strategies",
+      "How to make customers keep coming back",
+      "Word-of-mouth and referral marketing",
+      "Selling at markets, shops, and door-to-door",
+    ],
+  },
+  {
+    id: "28",
+    slug: "social-media-business",
+    title: "Social Media for Business",
+    description: "Use social media to promote your business and reach more customers.",
+    price: 15000,
+    category: "Business",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "Which platforms work best for your type of business",
+      "How to create content that attracts customers",
+      "Taking good product photos with your phone",
+      "Growing your following organically",
+      "Turning social media followers into paying customers",
+    ],
+  },
+  {
+    id: "29",
+    slug: "financial-management-saving",
+    title: "Financial Management & Saving",
+    description: "Take control of your business finances and build financial security.",
+    price: 15000,
+    category: "Business",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "How to separate personal and business money",
+      "Simple bookkeeping for small businesses",
+      "How to save and reinvest your profits",
+      "Managing expenses and avoiding debt",
+      "Planning for business growth",
+    ],
+  },
+  {
+    id: "30",
+    slug: "value-addition-product-development",
+    title: "Value Addition & Product Development",
+    description: "Add value to your products to earn more and stand out.",
+    price: 15000,
+    category: "Business",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "What value addition means and why it matters",
+      "How to improve your existing products",
+      "Developing new products from available resources",
+      "Branding and packaging to increase perceived value",
+      "Charging premium prices for quality products",
+    ],
+  },
+
+  // ── Waste to Wealth ────────────────────────────────────
+  {
+    id: "31",
+    slug: "eco-briquettes",
+    title: "Eco Briquettes from Waste",
+    description: "Turn paper and organic waste into eco-friendly fuel briquettes.",
+    price: 15000,
+    category: "Waste to Wealth",
+    image: "/images/trainings/briquettes.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "What eco briquettes are and why they are in demand",
+      "Materials needed — mostly waste you already have",
+      "Step-by-step briquette making process",
+      "Drying and quality checking",
+      "Selling to homes, restaurants, and institutions",
+    ],
+  },
+  {
+    id: "32",
+    slug: "charcoal-briquettes",
+    title: "Charcoal Briquettes",
+    description: "Produce charcoal briquettes from agricultural and wood waste.",
+    price: 15000,
+    category: "Waste to Wealth",
+    image: "/images/trainings/briquettes.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Raw materials for charcoal briquette production",
+      "Carbonisation and mixing process",
+      "Shaping and drying briquettes",
+      "Packaging for retail and bulk sale",
+      "Market opportunities for charcoal briquettes",
+    ],
+  },
+  {
+    id: "33",
+    slug: "organic-manure-compost",
+    title: "Organic Manure & Compost",
+    description: "Make organic compost and manure from household and farm waste.",
+    price: 15000,
+    category: "Waste to Wealth",
+    image: "/images/trainings/compost.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Types of organic waste suitable for composting",
+      "Setting up a compost system",
+      "Managing the composting process",
+      "Testing compost quality",
+      "Selling to farmers and gardeners",
+    ],
+  },
+  {
+    id: "34",
+    slug: "products-from-agricultural-waste",
+    title: "Products from Agricultural Waste",
+    description: "Turn crop waste and by-products into sellable products.",
+    price: 15000,
+    category: "Waste to Wealth",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "Common agricultural waste with business potential",
+      "Processing and converting waste into products",
+      "Examples of profitable agricultural waste products",
+      "Packaging and marketing your products",
+      "Building a sustainable agri-business",
+    ],
+  },
+  {
+    id: "35",
+    slug: "recycling-reusable-products",
+    title: "Recycling & Reusable Products",
+    description: "Create useful products from recycled and reusable materials.",
+    price: 15000,
+    category: "Waste to Wealth",
+    image: "/images/trainings/recycling.jpg",
+    duration: "1 Day",
+    whatYouLearn: [
+      "Identifying recyclable materials in your community",
+      "Simple techniques for creating products from waste",
+      "Examples of recycled products people buy",
+      "Packaging and presenting recycled products",
+      "Selling in local markets and online",
+    ],
+  },
+  {
+    id: "36",
+    slug: "waste-based-business-opportunities",
+    title: "Waste-Based Business Opportunities",
+    description: "Discover how to build a full business around waste management.",
+    price: 15000,
+    category: "Waste to Wealth",
+    image: null,
+    duration: "1 Day",
+    whatYouLearn: [
+      "The growing demand for waste solutions",
+      "Business models built around waste",
+      "How to source waste materials at low or no cost",
+      "Setting up a small waste-to-wealth operation",
+      "Scaling your waste business as it grows",
+    ],
   },
 ];
 
-/** Returns only the first N trainings for homepage preview */
 export function getFeaturedTrainings(count = 6): Training[] {
   return trainings.slice(0, count);
 }
 
-/** Returns trainings filtered by category */
 export function getTrainingsByCategory(category: TrainingCategory): Training[] {
   return trainings.filter((t) => t.category === category);
 }
 
-/** Format price as Malawian Kwacha */
+export function getTrainingBySlug(slug: string): Training | undefined {
+  return trainings.find((t) => t.slug === slug);
+}
+
+export function getRelatedTrainings(current: Training, count = 3): Training[] {
+  return trainings
+    .filter((t) => t.category === current.category && t.id !== current.id)
+    .slice(0, count);
+}
+
 export function formatPrice(price: number): string {
   return `K${price.toLocaleString()}`;
 }

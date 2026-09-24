@@ -12,18 +12,20 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { label: "HOME", href: "/" },
   { label: "ABOUT ME", href: "/about" },
-  {
-    label: "TRAININGS",
-    href: "/trainings",
-    dropdown: [
-  { label: "Soaps & Oils", href: "/trainings/soaps-oils" },
-  { label: "Snacks & Food", href: "/trainings/snacks-food" },
-  { label: "Personal Care Products", href: "/trainings/personal-care" },
-  { label: "Cleaning Products", href: "/trainings/cleaning-products" },
-  { label: "Business & Entrepreneurship", href: "/trainings/business" },
-  { label: "Waste to Wealth", href: "/trainings/waste-to-wealth" },
-],
-  },
+  
+    {
+  label: "TRAININGS",
+  href: "/trainings",
+  dropdown: [
+    { label: "Soaps & Oils", href: "/trainings" },
+    { label: "Snacks & Food", href: "/trainings" },
+    { label: "Personal Care Products", href: "/trainings" },
+    { label: "Cleaning Products", href: "/trainings" },
+    { label: "Business & Entrepreneurship", href: "/trainings" },
+    { label: "Waste to Wealth", href: "/trainings" },
+  ],
+},
+  
   { label: "COURSES", href: "/courses" },
   {
     label: "BOOKS & GUIDES",
@@ -38,6 +40,7 @@ export const navItems: NavItem[] = [
   { label: "BLOG", href: "/blog" },
   { label: "CONTACT", href: "/contact" },
 ];
+
 
 export const socialLinks = [
   { name: "Facebook",  href: "https://www.facebook.com/share/19iwddxRJH/" },
