@@ -27,15 +27,16 @@ export const navItems: NavItem[] = [
 },
   
   { label: "COURSES", href: "/courses" },
-  {
-    label: "BOOKS & GUIDES",
-    href: "/books-guides",
-    dropdown: [
-      { label: "Books", href: "/books-guides/books" },
-      { label: "Business Guides", href: "/books-guides/guides" },
-      { label: "Downloadable Resources", href: "/books-guides/resources" },
-    ],
-  },
+  
+   {
+  label: "BOOKS & GUIDES",
+  href: "/books-guides",
+  dropdown: [
+    { label: "Books", href: "/books-guides" },
+    { label: "Business Guides", href: "/books-guides" },
+    { label: "Downloadable Resources", href: "/books-guides" },
+  ],
+},
   { label: "BUSINESS IDEAS", href: "/business-ideas" },
   { label: "BLOG", href: "/blog" },
   { label: "CONTACT", href: "/contact" },
