@@ -194,9 +194,9 @@ public/images/
 
 https://github.com/GiftWA/eunice-kholowa-business-hub
 
-## Live URL (after deployment)
+## Live URL
 
-[To be updated after Vercel deployment]
+https://eunice-kholowa-business-hub.vercel.app
 
 ## How To Run Locally
 
